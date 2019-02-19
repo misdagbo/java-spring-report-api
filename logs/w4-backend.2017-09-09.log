@@ -1,0 +1,170 @@
+09/09/2017 19:03:46.015 [http-nio-8090-exec-1] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:03:46.094 [http-nio-8090-exec-1] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:03:46.095 [http-nio-8090-exec-1] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:03:46.115 [http-nio-8090-exec-2] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:03:46.140 [http-nio-8090-exec-2] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+09/09/2017 19:03:47.554 [http-nio-8090-exec-2] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+09/09/2017 19:03:47.562 [http-nio-8090-exec-2] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:03:47.562 [http-nio-8090-exec-2] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:04:51.732 [http-nio-8090-exec-4] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:04:51.732 [http-nio-8090-exec-4] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:04:51.733 [http-nio-8090-exec-4] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:04:51.786 [http-nio-8090-exec-5] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:04:51.786 [http-nio-8090-exec-5] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+09/09/2017 19:04:52.746 [http-nio-8090-exec-5] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+09/09/2017 19:04:52.748 [http-nio-8090-exec-5] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:04:52.748 [http-nio-8090-exec-5] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:12:43.450 [http-nio-8090-exec-7] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:12:43.451 [http-nio-8090-exec-7] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:12:43.451 [http-nio-8090-exec-7] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:12:43.479 [http-nio-8090-exec-8] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:12:43.480 [http-nio-8090-exec-8] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+09/09/2017 19:12:44.453 [http-nio-8090-exec-8] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+09/09/2017 19:12:44.455 [http-nio-8090-exec-8] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:12:44.455 [http-nio-8090-exec-8] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:13:45.984 [http-nio-8090-exec-10] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:13:45.984 [http-nio-8090-exec-10] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:13:45.984 [http-nio-8090-exec-10] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:13:46.048 [http-nio-8090-exec-1] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:13:46.049 [http-nio-8090-exec-1] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+09/09/2017 19:13:47.012 [http-nio-8090-exec-1] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+09/09/2017 19:13:47.013 [http-nio-8090-exec-1] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:13:47.013 [http-nio-8090-exec-1] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:13:57.929 [http-nio-8090-exec-2] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:13:57.929 [http-nio-8090-exec-2] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:13:57.930 [http-nio-8090-exec-2] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:13:57.994 [http-nio-8090-exec-3] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:13:57.994 [http-nio-8090-exec-3] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+09/09/2017 19:13:58.806 [http-nio-8090-exec-3] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+09/09/2017 19:13:58.807 [http-nio-8090-exec-3] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:13:58.807 [http-nio-8090-exec-3] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:14:54.084 [http-nio-8090-exec-4] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:14:54.084 [http-nio-8090-exec-4] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:14:54.085 [http-nio-8090-exec-4] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:14:54.128 [http-nio-8090-exec-5] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:14:54.128 [http-nio-8090-exec-5] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+09/09/2017 19:14:55.129 [http-nio-8090-exec-5] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+09/09/2017 19:14:55.130 [http-nio-8090-exec-5] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:14:55.130 [http-nio-8090-exec-5] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:26:34.820 [http-nio-8090-exec-7] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:26:34.821 [http-nio-8090-exec-7] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:26:34.821 [http-nio-8090-exec-7] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:26:34.847 [http-nio-8090-exec-8] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:26:34.848 [http-nio-8090-exec-8] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+09/09/2017 19:26:35.834 [http-nio-8090-exec-8] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+09/09/2017 19:26:35.835 [http-nio-8090-exec-8] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:26:35.836 [http-nio-8090-exec-8] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:31:55.351 [http-nio-8090-exec-10] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:31:55.351 [http-nio-8090-exec-10] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:31:55.351 [http-nio-8090-exec-10] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:31:55.366 [http-nio-8090-exec-1] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:31:55.367 [http-nio-8090-exec-1] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+09/09/2017 19:31:56.345 [http-nio-8090-exec-1] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+09/09/2017 19:31:56.346 [http-nio-8090-exec-1] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:31:56.347 [http-nio-8090-exec-1] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:32:05.399 [http-nio-8090-exec-2] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:32:05.399 [http-nio-8090-exec-2] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:32:05.399 [http-nio-8090-exec-2] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:32:05.419 [http-nio-8090-exec-3] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:32:05.419 [http-nio-8090-exec-3] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+09/09/2017 19:32:06.322 [http-nio-8090-exec-3] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+09/09/2017 19:32:06.323 [http-nio-8090-exec-3] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:32:06.323 [http-nio-8090-exec-3] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:56:12.105 [http-nio-8090-exec-5] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:56:12.105 [http-nio-8090-exec-5] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:56:12.106 [http-nio-8090-exec-5] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 19:56:12.123 [http-nio-8090-exec-6] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+09/09/2017 19:56:12.124 [http-nio-8090-exec-6] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+09/09/2017 19:56:13.074 [http-nio-8090-exec-6] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+09/09/2017 19:56:13.076 [http-nio-8090-exec-6] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+09/09/2017 19:56:13.076 [http-nio-8090-exec-6] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+09/09/2017 20:13:27.683 [RMI TCP Connection(2)-127.0.0.1] [SpringApplicationAdminMXBeanRegistrar.java:125]
+				INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+09/09/2017 20:13:27.684 [RMI TCP Connection(2)-127.0.0.1] [AbstractApplicationContext.java:987]
+				INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b2cf7ab: startup date [Fri Sep 08 16:00:22 GMT 2017]; root of context hierarchy
+09/09/2017 20:13:27.693 [RMI TCP Connection(2)-127.0.0.1] [MBeanExporter.java:449]
+				INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+09/09/2017 20:13:43.746 [localhost-startStop-2] [AbstractApplicationContext.java:987]
+				INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32493109: startup date [Fri Sep 08 08:54:37 GMT 2017]; root of context hierarchy
+09/09/2017 20:13:43.798 [localhost-startStop-2] [MBeanExporter.java:449]
+				INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

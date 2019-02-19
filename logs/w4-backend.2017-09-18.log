@@ -1,0 +1,734 @@
+18/09/2017 09:23:15.273 [main] [StartupInfoLogger.java:48]
+				INFO  com.w4.workflowBackend.Main - Starting Main on MacBook-Pro-de-HIE.local with PID 1231 (/Users/frederic/Documents/workspace-sts-3.8.3.RELEASE/workflowBackend/target/classes started by frederic in /Users/frederic/Documents/workspace-sts-3.8.3.RELEASE/workflowBackend)
+18/09/2017 09:23:15.275 [main] [StartupInfoLogger.java:51]
+				DEBUG com.w4.workflowBackend.Main - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+18/09/2017 09:23:15.275 [main] [SpringApplication.java:641]
+				INFO  com.w4.workflowBackend.Main - The following profiles are active: dev
+18/09/2017 09:23:15.313 [main] [AbstractApplicationContext.java:582]
+				INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b2cf7ab: startup date [Mon Sep 18 09:23:15 GMT 2017]; root of context hierarchy
+18/09/2017 09:23:15.490 [background-preinit] [Version.java:30]
+				INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+18/09/2017 09:23:16.128 [main] [TomcatEmbeddedServletContainer.java:89]
+				INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+18/09/2017 09:23:16.139 [main] [DirectJDKLog.java:179]
+				INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+18/09/2017 09:23:16.140 [main] [DirectJDKLog.java:179]
+				INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+18/09/2017 09:23:16.192 [localhost-startStop-1] [DirectJDKLog.java:179]
+				INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18/09/2017 09:23:16.192 [localhost-startStop-1] [EmbeddedWebApplicationContext.java:276]
+				INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 879 ms
+18/09/2017 09:23:16.271 [localhost-startStop-1] [ServletRegistrationBean.java:190]
+				INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18/09/2017 09:23:16.275 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'crossFilter' to: [/*]
+18/09/2017 09:23:16.276 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18/09/2017 09:23:16.276 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18/09/2017 09:23:16.276 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18/09/2017 09:23:16.276 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18/09/2017 09:23:16.463 [main] [RequestMappingHandlerAdapter.java:534]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b2cf7ab: startup date [Mon Sep 18 09:23:15 GMT 2017]; root of context hierarchy
+18/09/2017 09:23:16.515 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getRole],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.RoleResponse com.w4.workflowBackend.services.Service.getRole(com.w4.workflowBackend.contracts.RoleRequest)
+18/09/2017 09:23:16.517 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/signInActor],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.ActorResponse com.w4.workflowBackend.services.Service.signInActor(com.w4.workflowBackend.contracts.ActorRequest)
+18/09/2017 09:23:16.517 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getStep],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.StepResponse com.w4.workflowBackend.services.Service.getStep(com.w4.workflowBackend.contracts.StepRequest)
+18/09/2017 09:23:16.518 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/saveTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.saveTask(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.518 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/logoutActor],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.ActorResponse com.w4.workflowBackend.services.Service.logoutActor(com.w4.workflowBackend.contracts.ActorRequest)
+18/09/2017 09:23:16.518 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/createWorkcase],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.createWorkcase(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.519 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getWorkcase],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getWorkcase(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.519 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getCommentaireDossier],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.CommentaireResponse com.w4.workflowBackend.services.Service.getCommentaireDossier(com.w4.workflowBackend.contracts.CommentaireRequest)
+18/09/2017 09:23:16.519 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/lockTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.lockTask(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.520 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getDocumentDossier],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.DocumentResponse com.w4.workflowBackend.services.Service.getDocumentDossier(com.w4.workflowBackend.contracts.DocumentRequest)
+18/09/2017 09:23:16.520 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/unlockTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.unlockTask(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.520 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/checkTaskStatus],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.checkTaskStatus(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.520 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getTaskVariables],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getTaskVariables(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.521 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/submitTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.submitTask(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.521 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getWorkcaseDetails],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getWorkcaseDetails(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.521 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getAlarmTaskItem],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getAlarmTaskItem(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.523 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getWorkcaseVariables],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getWorkcaseVariables(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.523 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/searchWorkcase],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.searchWorkcase(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.523 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getListActorByRole],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.ActorResponse com.w4.workflowBackend.services.Service.getListActorByRole(com.w4.workflowBackend.contracts.ActorRequest)
+18/09/2017 09:23:16.524 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getTaskMyGoupLock],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getTaskMyGoupLock(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.524 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getMyTaskLock],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getMyTaskLock(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.524 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getMyTaskLockByActor],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getMyTaskLockByActor(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.525 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getMyTaskOffer],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getMyTaskOffer(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.525 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/attachFile],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.DocumentResponse com.w4.workflowBackend.services.Service.attachFile(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.525 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/reassignTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.reassignTask(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.526 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getCountMyTaskLock],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getCountMyTaskLock(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.526 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getCountTaskOffer],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getCountTaskOffer(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:23:16.528 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18/09/2017 09:23:16.528 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18/09/2017 09:23:16.545 [main] [AbstractUrlHandlerMapping.java:362]
+				INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18/09/2017 09:23:16.546 [main] [AbstractUrlHandlerMapping.java:362]
+				INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18/09/2017 09:23:16.570 [main] [AbstractUrlHandlerMapping.java:362]
+				INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18/09/2017 09:23:16.663 [main] [MBeanExporter.java:431]
+				INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+18/09/2017 09:23:16.676 [main] [DirectJDKLog.java:179]
+				INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+18/09/2017 09:23:16.681 [main] [DirectJDKLog.java:179]
+				INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8090]
+18/09/2017 09:23:16.700 [main] [DirectJDKLog.java:179]
+				INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+18/09/2017 09:23:16.710 [main] [TomcatEmbeddedServletContainer.java:198]
+				INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+18/09/2017 09:23:16.713 [main] [StartupInfoLogger.java:57]
+				INFO  com.w4.workflowBackend.Main - Started Main in 1.639 seconds (JVM running for 2.139)
+18/09/2017 09:26:54.184 [localhost-startStop-1] [StartupInfoLogger.java:48]
+				INFO  c.w.w.ServletInitializer - Starting ServletInitializer v0.0.1-SNAPSHOT on MacBook-Pro-de-HIE.local with PID 1510 (/Users/frederic/Documents/serveur/apache-tomcat-8.5.9/webapps/w4-api/WEB-INF/classes started by frederic in /Users/frederic/Documents/serveur/apache-tomcat-8.5.9/bin)
+18/09/2017 09:26:54.187 [localhost-startStop-1] [StartupInfoLogger.java:51]
+				DEBUG c.w.w.ServletInitializer - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+18/09/2017 09:26:54.188 [localhost-startStop-1] [SpringApplication.java:641]
+				INFO  c.w.w.ServletInitializer - The following profiles are active: dev
+18/09/2017 09:26:54.222 [localhost-startStop-1] [AbstractApplicationContext.java:582]
+				INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@337e9c54: startup date [Mon Sep 18 09:26:54 GMT 2017]; root of context hierarchy
+18/09/2017 09:26:54.310 [background-preinit] [Version.java:30]
+				INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+18/09/2017 09:26:54.974 [localhost-startStop-1] [EmbeddedWebApplicationContext.java:276]
+				INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 752 ms
+18/09/2017 09:26:55.298 [localhost-startStop-1] [ServletRegistrationBean.java:190]
+				INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18/09/2017 09:26:55.299 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'errorPageFilter' to: [/*]
+18/09/2017 09:26:55.299 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18/09/2017 09:26:55.299 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18/09/2017 09:26:55.300 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18/09/2017 09:26:55.300 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18/09/2017 09:26:55.618 [localhost-startStop-1] [RequestMappingHandlerAdapter.java:534]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@337e9c54: startup date [Mon Sep 18 09:26:54 GMT 2017]; root of context hierarchy
+18/09/2017 09:26:55.693 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getRole],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.RoleResponse com.w4.workflowBackend.services.Service.getRole(com.w4.workflowBackend.contracts.RoleRequest)
+18/09/2017 09:26:55.695 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/createWorkcase],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.createWorkcase(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.695 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/saveTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.saveTask(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.695 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getDocumentDossier],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.DocumentResponse com.w4.workflowBackend.services.Service.getDocumentDossier(com.w4.workflowBackend.contracts.DocumentRequest)
+18/09/2017 09:26:55.696 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/unlockTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.unlockTask(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.696 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/checkTaskStatus],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.checkTaskStatus(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.696 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getTaskVariables],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getTaskVariables(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.697 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/submitTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.submitTask(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.697 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getWorkcaseDetails],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getWorkcaseDetails(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.697 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getAlarmTaskItem],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getAlarmTaskItem(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.698 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getWorkcaseVariables],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getWorkcaseVariables(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.698 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/searchWorkcase],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.searchWorkcase(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.698 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/signInActor],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.ActorResponse com.w4.workflowBackend.services.Service.signInActor(com.w4.workflowBackend.contracts.ActorRequest)
+18/09/2017 09:26:55.699 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/logoutActor],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.ActorResponse com.w4.workflowBackend.services.Service.logoutActor(com.w4.workflowBackend.contracts.ActorRequest)
+18/09/2017 09:26:55.699 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getWorkcase],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getWorkcase(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.699 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getCommentaireDossier],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.CommentaireResponse com.w4.workflowBackend.services.Service.getCommentaireDossier(com.w4.workflowBackend.contracts.CommentaireRequest)
+18/09/2017 09:26:55.701 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/lockTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.lockTask(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.701 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getListActorByRole],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.ActorResponse com.w4.workflowBackend.services.Service.getListActorByRole(com.w4.workflowBackend.contracts.ActorRequest)
+18/09/2017 09:26:55.701 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getTaskMyGoupLock],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getTaskMyGoupLock(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.702 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getStep],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.StepResponse com.w4.workflowBackend.services.Service.getStep(com.w4.workflowBackend.contracts.StepRequest)
+18/09/2017 09:26:55.703 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getMyTaskLock],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getMyTaskLock(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.703 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getMyTaskLockByActor],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getMyTaskLockByActor(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.704 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getMyTaskOffer],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getMyTaskOffer(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.704 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/attachFile],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.DocumentResponse com.w4.workflowBackend.services.Service.attachFile(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.704 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/reassignTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.reassignTask(com.w4.workflowBackend.contracts.TaskRequest)
+18/09/2017 09:26:55.706 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18/09/2017 09:26:55.707 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18/09/2017 09:26:55.735 [localhost-startStop-1] [AbstractUrlHandlerMapping.java:362]
+				INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18/09/2017 09:26:55.735 [localhost-startStop-1] [AbstractUrlHandlerMapping.java:362]
+				INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18/09/2017 09:26:55.773 [localhost-startStop-1] [AbstractUrlHandlerMapping.java:362]
+				INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18/09/2017 09:26:55.916 [localhost-startStop-1] [MBeanExporter.java:431]
+				INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+18/09/2017 09:26:55.932 [localhost-startStop-1] [StartupInfoLogger.java:57]
+				INFO  c.w.w.ServletInitializer - Started ServletInitializer in 2.261 seconds (JVM running for 12.912)
+18/09/2017 09:27:52.683 [http-nio-8090-exec-1] [DirectJDKLog.java:179]
+				INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18/09/2017 09:27:52.683 [http-nio-8090-exec-1] [FrameworkServlet.java:489]
+				INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+18/09/2017 09:27:52.695 [http-nio-8090-exec-1] [FrameworkServlet.java:508]
+				INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+18/09/2017 09:27:52.709 [http-nio-8090-exec-1] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:27:52.711 [http-nio-8090-exec-1] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:27:52.712 [http-nio-8090-exec-1] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:27:52.723 [http-nio-8090-exec-2] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:27:52.795 [http-nio-8090-exec-2] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+18/09/2017 09:27:53.225 [http-nio-8090-exec-2] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+18/09/2017 09:27:53.259 [http-nio-8090-exec-2] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:27:53.259 [http-nio-8090-exec-2] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:27:53.423 [http-nio-8090-exec-3] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:27:53.423 [http-nio-8090-exec-3] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:27:53.424 [http-nio-8090-exec-3] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:27:53.641 [http-nio-8090-exec-4] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:27:53.656 [http-nio-8090-exec-4] [Service.java:419]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getMyTaskLock............................
+18/09/2017 09:27:53.695 [http-nio-8090-exec-5] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:27:53.695 [http-nio-8090-exec-5] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:27:53.696 [http-nio-8090-exec-5] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:27:53.696 [http-nio-8090-exec-6] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:27:53.696 [http-nio-8090-exec-6] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:27:53.697 [http-nio-8090-exec-6] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:27:53.818 [http-nio-8090-exec-7] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:27:53.818 [http-nio-8090-exec-8] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:27:53.819 [http-nio-8090-exec-7] [Service.java:573]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCountMyTaskLock............................
+18/09/2017 09:27:53.819 [http-nio-8090-exec-8] [Service.java:595]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCountTaskOffer............................
+18/09/2017 09:27:54.004 [http-nio-8090-exec-7] [Service.java:588]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCountMyTaskLock............................
+18/09/2017 09:27:54.010 [http-nio-8090-exec-7] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:27:54.010 [http-nio-8090-exec-7] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:27:54.010 [http-nio-8090-exec-8] [Service.java:610]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCountTaskOffer............................
+18/09/2017 09:27:54.011 [http-nio-8090-exec-8] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:27:54.012 [http-nio-8090-exec-8] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:27:54.224 [http-nio-8090-exec-4] [Service.java:434]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getMyTaskLock............................
+18/09/2017 09:27:54.227 [http-nio-8090-exec-4] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:27:54.227 [http-nio-8090-exec-4] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:29:23.415 [http-nio-8090-exec-3] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:29:23.415 [http-nio-8090-exec-3] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:29:23.415 [http-nio-8090-exec-5] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:29:23.416 [http-nio-8090-exec-3] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:29:23.416 [http-nio-8090-exec-5] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:29:23.416 [http-nio-8090-exec-5] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:29:23.556 [http-nio-8090-exec-6] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:29:23.556 [http-nio-8090-exec-7] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:29:23.558 [http-nio-8090-exec-6] [Service.java:573]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCountMyTaskLock............................
+18/09/2017 09:29:23.558 [http-nio-8090-exec-7] [Service.java:595]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCountTaskOffer............................
+18/09/2017 09:29:23.713 [http-nio-8090-exec-6] [Service.java:588]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCountMyTaskLock............................
+18/09/2017 09:29:23.715 [http-nio-8090-exec-6] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:29:23.715 [http-nio-8090-exec-6] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:29:23.725 [http-nio-8090-exec-7] [Service.java:610]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCountTaskOffer............................
+18/09/2017 09:29:23.726 [http-nio-8090-exec-7] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:29:23.726 [http-nio-8090-exec-7] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:30:38.223 [http-nio-8090-exec-9] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:30:38.224 [http-nio-8090-exec-9] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:30:38.224 [http-nio-8090-exec-9] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:30:38.224 [http-nio-8090-exec-10] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:30:38.225 [http-nio-8090-exec-10] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:30:38.225 [http-nio-8090-exec-10] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:30:38.349 [http-nio-8090-exec-1] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:30:38.350 [http-nio-8090-exec-2] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:30:38.351 [http-nio-8090-exec-1] [Service.java:573]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCountMyTaskLock............................
+18/09/2017 09:30:38.351 [http-nio-8090-exec-2] [Service.java:595]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCountTaskOffer............................
+18/09/2017 09:30:38.795 [http-nio-8090-exec-2] [Service.java:610]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCountTaskOffer............................
+18/09/2017 09:30:38.797 [http-nio-8090-exec-2] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:30:38.797 [http-nio-8090-exec-2] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:30:41.156 [http-nio-8090-exec-1] [Service.java:588]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCountMyTaskLock............................
+18/09/2017 09:30:41.158 [http-nio-8090-exec-1] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:30:41.158 [http-nio-8090-exec-1] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:20.236 [http-nio-8090-exec-6] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:20.237 [http-nio-8090-exec-6] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:20.237 [http-nio-8090-exec-6] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:20.237 [http-nio-8090-exec-7] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:20.238 [http-nio-8090-exec-7] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:20.238 [http-nio-8090-exec-7] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:20.356 [http-nio-8090-exec-8] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:20.357 [http-nio-8090-exec-4] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:20.357 [http-nio-8090-exec-8] [Service.java:573]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCountMyTaskLock............................
+18/09/2017 09:39:20.358 [http-nio-8090-exec-4] [Service.java:595]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCountTaskOffer............................
+18/09/2017 09:39:20.559 [http-nio-8090-exec-8] [Service.java:588]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCountMyTaskLock............................
+18/09/2017 09:39:20.560 [http-nio-8090-exec-8] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:20.561 [http-nio-8090-exec-8] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:21.526 [http-nio-8090-exec-4] [Service.java:610]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCountTaskOffer............................
+18/09/2017 09:39:21.528 [http-nio-8090-exec-4] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:21.528 [http-nio-8090-exec-4] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:27.140 [http-nio-8090-exec-9] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:27.140 [http-nio-8090-exec-9] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:27.140 [http-nio-8090-exec-9] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:27.258 [http-nio-8090-exec-10] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:27.258 [http-nio-8090-exec-10] [Service.java:419]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getMyTaskLock............................
+18/09/2017 09:39:27.647 [http-nio-8090-exec-10] [Service.java:434]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getMyTaskLock............................
+18/09/2017 09:39:27.649 [http-nio-8090-exec-10] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:27.649 [http-nio-8090-exec-10] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:28.875 [http-nio-8090-exec-2] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:28.875 [http-nio-8090-exec-2] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:28.875 [http-nio-8090-exec-2] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:28.885 [http-nio-8090-exec-1] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:28.886 [http-nio-8090-exec-1] [Service.java:177]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method checkTaskStatus............................
+18/09/2017 09:39:29.040 [http-nio-8090-exec-1] [Service.java:192]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method checkTaskStatus............................
+18/09/2017 09:39:29.042 [http-nio-8090-exec-1] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:29.042 [http-nio-8090-exec-1] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:29.054 [http-nio-8090-exec-3] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:29.054 [http-nio-8090-exec-5] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:29.054 [http-nio-8090-exec-3] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:29.055 [http-nio-8090-exec-5] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:29.055 [http-nio-8090-exec-3] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:29.055 [http-nio-8090-exec-5] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:29.055 [http-nio-8090-exec-6] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:29.056 [http-nio-8090-exec-6] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:29.056 [http-nio-8090-exec-6] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:29.139 [http-nio-8090-exec-8] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:29.139 [http-nio-8090-exec-7] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:29.139 [http-nio-8090-exec-4] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:29.140 [http-nio-8090-exec-7] [Service.java:287]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getWorkcaseDetails............................
+18/09/2017 09:39:29.143 [http-nio-8090-exec-8] [Service.java:111]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCommentaireDossier............................
+18/09/2017 09:39:29.149 [http-nio-8090-exec-4] [Service.java:133]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getDocumentDossier............................
+18/09/2017 09:39:29.305 [http-nio-8090-exec-4] [Service.java:148]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getDocumentDossier............................
+18/09/2017 09:39:29.309 [http-nio-8090-exec-4] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:29.309 [http-nio-8090-exec-4] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:29.332 [http-nio-8090-exec-8] [Service.java:126]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCommentaireDossier............................
+18/09/2017 09:39:29.335 [http-nio-8090-exec-8] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:29.335 [http-nio-8090-exec-8] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:29.515 [http-nio-8090-exec-7] [Service.java:302]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getWorkcaseDetails............................
+18/09/2017 09:39:29.519 [http-nio-8090-exec-7] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:29.519 [http-nio-8090-exec-7] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:34.656 [http-nio-8090-exec-9] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:34.656 [http-nio-8090-exec-9] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:34.656 [http-nio-8090-exec-9] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:34.685 [http-nio-8090-exec-10] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:34.687 [http-nio-8090-exec-10] [Service.java:155]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method unlockTask............................
+18/09/2017 09:39:34.832 [http-nio-8090-exec-10] [Service.java:170]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method unlockTask............................
+18/09/2017 09:39:34.834 [http-nio-8090-exec-10] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:34.834 [http-nio-8090-exec-10] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:34.855 [http-nio-8090-exec-2] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:34.856 [http-nio-8090-exec-1] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:34.856 [http-nio-8090-exec-2] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:34.856 [http-nio-8090-exec-1] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:34.856 [http-nio-8090-exec-3] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:34.856 [http-nio-8090-exec-2] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:34.857 [http-nio-8090-exec-1] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:34.857 [http-nio-8090-exec-3] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:34.857 [http-nio-8090-exec-3] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:34.875 [http-nio-8090-exec-5] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:34.875 [http-nio-8090-exec-4] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:34.875 [http-nio-8090-exec-6] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:34.877 [http-nio-8090-exec-5] [Service.java:595]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCountTaskOffer............................
+18/09/2017 09:39:34.877 [http-nio-8090-exec-4] [Service.java:419]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getMyTaskLock............................
+18/09/2017 09:39:34.877 [http-nio-8090-exec-6] [Service.java:573]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCountMyTaskLock............................
+18/09/2017 09:39:35.019 [http-nio-8090-exec-6] [Service.java:588]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCountMyTaskLock............................
+18/09/2017 09:39:35.020 [http-nio-8090-exec-6] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:35.020 [http-nio-8090-exec-6] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:35.030 [http-nio-8090-exec-5] [Service.java:610]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCountTaskOffer............................
+18/09/2017 09:39:35.031 [http-nio-8090-exec-5] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:35.032 [http-nio-8090-exec-5] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:35.259 [http-nio-8090-exec-4] [Service.java:434]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getMyTaskLock............................
+18/09/2017 09:39:35.262 [http-nio-8090-exec-4] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:35.262 [http-nio-8090-exec-4] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:38.807 [http-nio-8090-exec-8] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:38.807 [http-nio-8090-exec-8] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:38.807 [http-nio-8090-exec-8] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:38.908 [http-nio-8090-exec-7] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:38.909 [http-nio-8090-exec-7] [Service.java:463]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getMyTaskOffer............................
+18/09/2017 09:39:39.605 [http-nio-8090-exec-7] [Service.java:478]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getMyTaskOffer............................
+18/09/2017 09:39:39.607 [http-nio-8090-exec-7] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:39.607 [http-nio-8090-exec-7] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:39.616 [http-nio-8090-exec-9] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:39.616 [http-nio-8090-exec-9] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:39.617 [http-nio-8090-exec-9] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:39.700 [http-nio-8090-exec-10] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:39.701 [http-nio-8090-exec-10] [Service.java:595]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCountTaskOffer............................
+18/09/2017 09:39:39.895 [http-nio-8090-exec-10] [Service.java:610]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCountTaskOffer............................
+18/09/2017 09:39:39.896 [http-nio-8090-exec-10] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:39.896 [http-nio-8090-exec-10] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:41.087 [http-nio-8090-exec-1] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:41.087 [http-nio-8090-exec-1] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:41.087 [http-nio-8090-exec-1] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:41.190 [http-nio-8090-exec-2] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:41.190 [http-nio-8090-exec-2] [Service.java:419]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getMyTaskLock............................
+18/09/2017 09:39:41.596 [http-nio-8090-exec-2] [Service.java:434]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getMyTaskLock............................
+18/09/2017 09:39:41.598 [http-nio-8090-exec-2] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:41.598 [http-nio-8090-exec-2] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:42.376 [http-nio-8090-exec-3] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:42.376 [http-nio-8090-exec-3] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:42.377 [http-nio-8090-exec-3] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:42.399 [http-nio-8090-exec-6] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:42.400 [http-nio-8090-exec-6] [Service.java:419]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getMyTaskLock............................
+18/09/2017 09:39:42.849 [http-nio-8090-exec-6] [Service.java:434]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getMyTaskLock............................
+18/09/2017 09:39:42.850 [http-nio-8090-exec-6] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:42.851 [http-nio-8090-exec-6] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:44.295 [http-nio-8090-exec-5] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.295 [http-nio-8090-exec-5] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:44.296 [http-nio-8090-exec-5] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:44.310 [http-nio-8090-exec-4] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.311 [http-nio-8090-exec-4] [Service.java:177]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method checkTaskStatus............................
+18/09/2017 09:39:44.492 [http-nio-8090-exec-4] [Service.java:192]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method checkTaskStatus............................
+18/09/2017 09:39:44.493 [http-nio-8090-exec-4] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:44.494 [http-nio-8090-exec-4] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:44.507 [http-nio-8090-exec-8] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.507 [http-nio-8090-exec-8] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:44.507 [http-nio-8090-exec-7] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.508 [http-nio-8090-exec-8] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:44.508 [http-nio-8090-exec-7] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:44.508 [http-nio-8090-exec-7] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:44.508 [http-nio-8090-exec-9] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.509 [http-nio-8090-exec-9] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:44.509 [http-nio-8090-exec-9] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:44.509 [http-nio-8090-exec-8] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.510 [http-nio-8090-exec-8] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:44.510 [http-nio-8090-exec-1] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.510 [http-nio-8090-exec-1] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:44.510 [http-nio-8090-exec-1] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:44.510 [http-nio-8090-exec-8] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:44.511 [http-nio-8090-exec-2] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.511 [http-nio-8090-exec-2] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:44.511 [http-nio-8090-exec-2] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:44.625 [http-nio-8090-exec-3] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.626 [http-nio-8090-exec-4] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.625 [http-nio-8090-exec-6] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.625 [http-nio-8090-exec-5] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.627 [http-nio-8090-exec-7] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.627 [http-nio-8090-exec-10] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:39:44.628 [http-nio-8090-exec-6] [Service.java:111]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCommentaireDossier............................
+18/09/2017 09:39:44.627 [http-nio-8090-exec-3] [Service.java:287]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getWorkcaseDetails............................
+18/09/2017 09:39:44.627 [http-nio-8090-exec-4] [Service.java:111]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getCommentaireDossier............................
+18/09/2017 09:39:44.628 [http-nio-8090-exec-5] [Service.java:133]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getDocumentDossier............................
+18/09/2017 09:39:44.628 [http-nio-8090-exec-7] [Service.java:133]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getDocumentDossier............................
+18/09/2017 09:39:44.628 [http-nio-8090-exec-10] [Service.java:287]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method getWorkcaseDetails............................
+18/09/2017 09:39:44.805 [http-nio-8090-exec-5] [Service.java:148]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getDocumentDossier............................
+18/09/2017 09:39:44.806 [http-nio-8090-exec-5] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:44.806 [http-nio-8090-exec-5] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:44.812 [http-nio-8090-exec-7] [Service.java:148]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getDocumentDossier............................
+18/09/2017 09:39:44.813 [http-nio-8090-exec-7] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:44.813 [http-nio-8090-exec-7] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:44.888 [http-nio-8090-exec-4] [Service.java:126]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCommentaireDossier............................
+18/09/2017 09:39:44.889 [http-nio-8090-exec-4] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:44.890 [http-nio-8090-exec-4] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:44.919 [http-nio-8090-exec-6] [Service.java:126]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getCommentaireDossier............................
+18/09/2017 09:39:44.920 [http-nio-8090-exec-6] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:44.920 [http-nio-8090-exec-6] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:45.091 [http-nio-8090-exec-3] [Service.java:302]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getWorkcaseDetails............................
+18/09/2017 09:39:45.092 [http-nio-8090-exec-3] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:45.092 [http-nio-8090-exec-3] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:39:45.104 [http-nio-8090-exec-10] [Service.java:302]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method getWorkcaseDetails............................
+18/09/2017 09:39:45.105 [http-nio-8090-exec-10] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:39:45.105 [http-nio-8090-exec-10] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:42:54.198 [http-nio-8090-exec-4] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:42:54.198 [http-nio-8090-exec-4] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:42:54.198 [http-nio-8090-exec-4] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 09:42:54.219 [http-nio-8090-exec-6] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 09:42:54.220 [http-nio-8090-exec-6] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+18/09/2017 09:42:54.344 [http-nio-8090-exec-6] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+18/09/2017 09:42:54.345 [http-nio-8090-exec-6] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 09:42:54.345 [http-nio-8090-exec-6] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 14:27:19.436 [http-nio-8090-exec-8] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 14:27:19.441 [http-nio-8090-exec-8] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 14:27:19.442 [http-nio-8090-exec-8] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 14:27:19.452 [http-nio-8090-exec-1] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 14:27:19.459 [http-nio-8090-exec-1] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+18/09/2017 14:27:19.880 [http-nio-8090-exec-1] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+18/09/2017 14:27:19.882 [http-nio-8090-exec-1] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 14:27:19.883 [http-nio-8090-exec-1] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 21:16:48.146 [http-nio-8090-exec-2] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 21:16:48.150 [http-nio-8090-exec-2] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 21:16:48.150 [http-nio-8090-exec-2] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+18/09/2017 21:16:48.168 [http-nio-8090-exec-5] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+18/09/2017 21:16:48.173 [http-nio-8090-exec-5] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+18/09/2017 21:16:49.473 [http-nio-8090-exec-5] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+18/09/2017 21:16:49.476 [http-nio-8090-exec-5] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+18/09/2017 21:16:49.477 [http-nio-8090-exec-5] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!

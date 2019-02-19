@@ -1,0 +1,248 @@
+21/09/2017 08:55:23.974 [localhost-startStop-1] [StartupInfoLogger.java:48]
+				INFO  c.w.w.ServletInitializer - Starting ServletInitializer v0.0.1-SNAPSHOT on MacBook-Pro-de-HIE.local with PID 1440 (/Users/frederic/Documents/serveur/apache-tomcat-8.5.9/webapps/w4-api/WEB-INF/classes started by frederic in /Users/frederic/Documents/serveur/apache-tomcat-8.5.9/bin)
+21/09/2017 08:55:23.979 [localhost-startStop-1] [StartupInfoLogger.java:51]
+				DEBUG c.w.w.ServletInitializer - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+21/09/2017 08:55:23.980 [localhost-startStop-1] [SpringApplication.java:641]
+				INFO  c.w.w.ServletInitializer - The following profiles are active: dev
+21/09/2017 08:55:24.021 [localhost-startStop-1] [AbstractApplicationContext.java:582]
+				INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@382bab56: startup date [Thu Sep 21 08:55:24 GMT 2017]; root of context hierarchy
+21/09/2017 08:55:24.101 [background-preinit] [Version.java:30]
+				INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+21/09/2017 08:55:24.783 [localhost-startStop-1] [EmbeddedWebApplicationContext.java:276]
+				INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 762 ms
+21/09/2017 08:55:25.100 [localhost-startStop-1] [ServletRegistrationBean.java:190]
+				INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+21/09/2017 08:55:25.101 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'errorPageFilter' to: [/*]
+21/09/2017 08:55:25.101 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+21/09/2017 08:55:25.102 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+21/09/2017 08:55:25.102 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+21/09/2017 08:55:25.102 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+21/09/2017 08:55:25.405 [localhost-startStop-1] [RequestMappingHandlerAdapter.java:534]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@382bab56: startup date [Thu Sep 21 08:55:24 GMT 2017]; root of context hierarchy
+21/09/2017 08:55:25.513 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/saveTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.saveTask(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.515 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/createWorkcase],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.createWorkcase(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.516 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/lockTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.lockTask(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.516 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/signInActor],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.ActorResponse com.w4.workflowBackend.services.Service.signInActor(com.w4.workflowBackend.contracts.ActorRequest)
+21/09/2017 08:55:25.517 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/logoutActor],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.ActorResponse com.w4.workflowBackend.services.Service.logoutActor(com.w4.workflowBackend.contracts.ActorRequest)
+21/09/2017 08:55:25.517 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getWorkcase],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getWorkcase(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.517 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getCommentaireDossier],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.CommentaireResponse com.w4.workflowBackend.services.Service.getCommentaireDossier(com.w4.workflowBackend.contracts.CommentaireRequest)
+21/09/2017 08:55:25.518 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getDocumentDossier],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.DocumentResponse com.w4.workflowBackend.services.Service.getDocumentDossier(com.w4.workflowBackend.contracts.DocumentRequest)
+21/09/2017 08:55:25.518 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/unlockTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.unlockTask(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.518 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/checkTaskStatus],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.checkTaskStatus(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.519 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getTaskVariables],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getTaskVariables(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.519 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/submitTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.submitTask(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.519 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getWorkcaseDetails],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getWorkcaseDetails(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.520 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getAlarmTaskItem],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getAlarmTaskItem(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.520 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getWorkcaseVariables],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getWorkcaseVariables(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.520 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/searchWorkcase],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.searchWorkcase(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.522 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getRole],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.RoleResponse com.w4.workflowBackend.services.Service.getRole(com.w4.workflowBackend.contracts.RoleRequest)
+21/09/2017 08:55:25.522 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getMyTaskLock],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getMyTaskLock(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.522 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getTaskMyGoupLock],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getTaskMyGoupLock(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.522 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getListActorByRole],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.ActorResponse com.w4.workflowBackend.services.Service.getListActorByRole(com.w4.workflowBackend.contracts.ActorRequest)
+21/09/2017 08:55:25.523 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getStep],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.StepResponse com.w4.workflowBackend.services.Service.getStep(com.w4.workflowBackend.contracts.StepRequest)
+21/09/2017 08:55:25.523 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getMyTaskLockByActor],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getMyTaskLockByActor(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.524 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getMyTaskOffer],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getMyTaskOffer(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.524 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/attachFile],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.DocumentResponse com.w4.workflowBackend.services.Service.attachFile(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.524 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/reassignTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.reassignTask(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:55:25.526 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21/09/2017 08:55:25.526 [localhost-startStop-1] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21/09/2017 08:55:25.549 [localhost-startStop-1] [AbstractUrlHandlerMapping.java:362]
+				INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21/09/2017 08:55:25.549 [localhost-startStop-1] [AbstractUrlHandlerMapping.java:362]
+				INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21/09/2017 08:55:25.588 [localhost-startStop-1] [AbstractUrlHandlerMapping.java:362]
+				INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21/09/2017 08:55:25.716 [localhost-startStop-1] [MBeanExporter.java:431]
+				INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+21/09/2017 08:55:25.731 [localhost-startStop-1] [StartupInfoLogger.java:57]
+				INFO  c.w.w.ServletInitializer - Started ServletInitializer in 2.242 seconds (JVM running for 12.94)
+21/09/2017 08:58:42.750 [main] [StartupInfoLogger.java:48]
+				INFO  com.w4.workflowBackend.Main - Starting Main on MacBook-Pro-de-HIE.local with PID 1457 (/Users/frederic/Documents/workspace-sts-3.8.3.RELEASE/workflowBackend/target/classes started by frederic in /Users/frederic/Documents/workspace-sts-3.8.3.RELEASE/workflowBackend)
+21/09/2017 08:58:42.752 [main] [StartupInfoLogger.java:51]
+				DEBUG com.w4.workflowBackend.Main - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+21/09/2017 08:58:42.753 [main] [SpringApplication.java:641]
+				INFO  com.w4.workflowBackend.Main - The following profiles are active: dev
+21/09/2017 08:58:42.792 [main] [AbstractApplicationContext.java:582]
+				INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b2cf7ab: startup date [Thu Sep 21 08:58:42 GMT 2017]; root of context hierarchy
+21/09/2017 08:58:42.950 [background-preinit] [Version.java:30]
+				INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+21/09/2017 08:58:43.617 [main] [TomcatEmbeddedServletContainer.java:89]
+				INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+21/09/2017 08:58:43.628 [main] [DirectJDKLog.java:179]
+				INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+21/09/2017 08:58:43.629 [main] [DirectJDKLog.java:179]
+				INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+21/09/2017 08:58:43.679 [localhost-startStop-1] [DirectJDKLog.java:179]
+				INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21/09/2017 08:58:43.680 [localhost-startStop-1] [EmbeddedWebApplicationContext.java:276]
+				INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 888 ms
+21/09/2017 08:58:43.764 [localhost-startStop-1] [ServletRegistrationBean.java:190]
+				INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+21/09/2017 08:58:43.768 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'crossFilter' to: [/*]
+21/09/2017 08:58:43.768 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+21/09/2017 08:58:43.768 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+21/09/2017 08:58:43.768 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+21/09/2017 08:58:43.769 [localhost-startStop-1] [AbstractFilterRegistrationBean.java:258]
+				INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+21/09/2017 08:58:43.992 [main] [RequestMappingHandlerAdapter.java:534]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b2cf7ab: startup date [Thu Sep 21 08:58:42 GMT 2017]; root of context hierarchy
+21/09/2017 08:58:44.041 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getStep],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.StepResponse com.w4.workflowBackend.services.Service.getStep(com.w4.workflowBackend.contracts.StepRequest)
+21/09/2017 08:58:44.043 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getWorkcaseDetails],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getWorkcaseDetails(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.043 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getAlarmTaskItem],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getAlarmTaskItem(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.044 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getWorkcaseVariables],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getWorkcaseVariables(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.044 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/searchWorkcase],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.searchWorkcase(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.044 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getListActorByRole],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.ActorResponse com.w4.workflowBackend.services.Service.getListActorByRole(com.w4.workflowBackend.contracts.ActorRequest)
+21/09/2017 08:58:44.044 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getTaskMyGoupLock],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getTaskMyGoupLock(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.045 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getMyTaskLock],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getMyTaskLock(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.045 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getMyTaskLockByActor],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getMyTaskLockByActor(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.046 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getMyTaskOffer],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getMyTaskOffer(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.046 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/attachFile],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.DocumentResponse com.w4.workflowBackend.services.Service.attachFile(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.046 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/reassignTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.reassignTask(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.047 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getCountMyTaskLock],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getCountMyTaskLock(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.047 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getCountTaskOffer],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getCountTaskOffer(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.048 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getRole],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.RoleResponse com.w4.workflowBackend.services.Service.getRole(com.w4.workflowBackend.contracts.RoleRequest)
+21/09/2017 08:58:44.048 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/signInActor],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.ActorResponse com.w4.workflowBackend.services.Service.signInActor(com.w4.workflowBackend.contracts.ActorRequest)
+21/09/2017 08:58:44.049 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/logoutActor],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.ActorResponse com.w4.workflowBackend.services.Service.logoutActor(com.w4.workflowBackend.contracts.ActorRequest)
+21/09/2017 08:58:44.050 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/createWorkcase],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.createWorkcase(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.050 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/saveTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.saveTask(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.051 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getWorkcase],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getWorkcase(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.051 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getCommentaireDossier],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.CommentaireResponse com.w4.workflowBackend.services.Service.getCommentaireDossier(com.w4.workflowBackend.contracts.CommentaireRequest)
+21/09/2017 08:58:44.052 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getDocumentDossier],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.DocumentResponse com.w4.workflowBackend.services.Service.getDocumentDossier(com.w4.workflowBackend.contracts.DocumentRequest)
+21/09/2017 08:58:44.052 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/lockTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.lockTask(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.053 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/unlockTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.unlockTask(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.053 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/checkTaskStatus],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.checkTaskStatus(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.054 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/getTaskVariables],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.getTaskVariables(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.054 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/workflowBackend/submitTask],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public com.w4.workflowBackend.contracts.TaskResponse com.w4.workflowBackend.services.Service.submitTask(com.w4.workflowBackend.contracts.TaskRequest)
+21/09/2017 08:58:44.056 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21/09/2017 08:58:44.057 [main] [AbstractHandlerMethodMapping.java:543]
+				INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21/09/2017 08:58:44.074 [main] [AbstractUrlHandlerMapping.java:362]
+				INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21/09/2017 08:58:44.075 [main] [AbstractUrlHandlerMapping.java:362]
+				INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21/09/2017 08:58:44.098 [main] [AbstractUrlHandlerMapping.java:362]
+				INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21/09/2017 08:58:44.194 [main] [MBeanExporter.java:431]
+				INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+21/09/2017 08:58:44.208 [main] [DirectJDKLog.java:179]
+				INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+21/09/2017 08:58:44.214 [main] [DirectJDKLog.java:179]
+				INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8090]
+21/09/2017 08:58:44.226 [main] [DirectJDKLog.java:179]
+				INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+21/09/2017 08:58:44.237 [main] [TomcatEmbeddedServletContainer.java:198]
+				INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+21/09/2017 08:58:44.240 [main] [StartupInfoLogger.java:57]
+				INFO  com.w4.workflowBackend.Main - Started Main in 1.683 seconds (JVM running for 2.194)
+21/09/2017 08:59:16.934 [http-nio-8090-exec-1] [DirectJDKLog.java:179]
+				INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+21/09/2017 08:59:16.935 [http-nio-8090-exec-1] [FrameworkServlet.java:489]
+				INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+21/09/2017 08:59:16.945 [http-nio-8090-exec-1] [FrameworkServlet.java:508]
+				INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+21/09/2017 08:59:16.957 [http-nio-8090-exec-1] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+21/09/2017 08:59:16.959 [http-nio-8090-exec-1] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+21/09/2017 08:59:16.959 [http-nio-8090-exec-1] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+21/09/2017 08:59:16.969 [http-nio-8090-exec-2] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+21/09/2017 08:59:17.041 [http-nio-8090-exec-2] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+21/09/2017 08:59:17.975 [http-nio-8090-exec-2] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+21/09/2017 08:59:18.006 [http-nio-8090-exec-2] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+21/09/2017 08:59:18.006 [http-nio-8090-exec-2] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+21/09/2017 11:11:00.673 [http-nio-8090-exec-5] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+21/09/2017 11:11:00.674 [http-nio-8090-exec-5] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+21/09/2017 11:11:00.674 [http-nio-8090-exec-5] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+21/09/2017 11:11:00.699 [http-nio-8090-exec-6] [RequestInterceptor.java:24]
+				INFO  c.w.w.i.RequestInterceptor - Avant de traiter la requete
+21/09/2017 11:11:00.700 [http-nio-8090-exec-6] [Service.java:20]
+				INFO  c.w.workflowBackend.services.Service - ...........................begin method signInActor............................
+21/09/2017 11:11:02.003 [http-nio-8090-exec-6] [Service.java:37]
+				INFO  c.w.workflowBackend.services.Service - ...........................end method signInActor............................
+21/09/2017 11:11:02.007 [http-nio-8090-exec-6] [RequestInterceptor.java:31]
+				INFO  c.w.w.i.RequestInterceptor - La methode est executé
+21/09/2017 11:11:02.007 [http-nio-8090-exec-6] [RequestInterceptor.java:37]
+				INFO  c.w.w.i.RequestInterceptor - La requete est terminée!
+21/09/2017 19:12:32.240 [localhost-startStop-2] [AbstractApplicationContext.java:987]
+				INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@382bab56: startup date [Thu Sep 21 08:55:24 GMT 2017]; root of context hierarchy
+21/09/2017 19:12:32.245 [localhost-startStop-2] [MBeanExporter.java:449]
+				INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+21/09/2017 19:12:41.331 [RMI TCP Connection(2)-127.0.0.1] [SpringApplicationAdminMXBeanRegistrar.java:125]
+				INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+21/09/2017 19:12:41.335 [RMI TCP Connection(2)-127.0.0.1] [AbstractApplicationContext.java:987]
+				INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b2cf7ab: startup date [Thu Sep 21 08:58:42 GMT 2017]; root of context hierarchy
+21/09/2017 19:12:41.351 [RMI TCP Connection(2)-127.0.0.1] [MBeanExporter.java:449]
+				INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FicheClientDataVillage" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="14b36932-f7bc-49e9-90bb-9eebe440a224">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="DatasetDetailsGroupe" uuid="0bb9b776-e0d4-48dc-9134-1bf32679f697">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="mtpEsn" class="java.lang.String">
+			<fieldDescription><![CDATA[mtpEsn]]></fieldDescription>
+		</field>
+		<field name="typeRadio" class="java.lang.String">
+			<fieldDescription><![CDATA[typeRadio]]></fieldDescription>
+		</field>
+		<field name="nomGroupe" class="java.lang.String">
+			<fieldDescription><![CDATA[nomGroupe]]></fieldDescription>
+		</field>
+		<field name="numGroupe" class="java.lang.String">
+			<fieldDescription><![CDATA[numGroupe]]></fieldDescription>
+		</field>
+		<field name="class" class="java.lang.Class">
+			<fieldDescription><![CDATA[class]]></fieldDescription>
+		</field>
+		<field name="numCanal" class="java.lang.String">
+			<fieldDescription><![CDATA[numCanal]]></fieldDescription>
+		</field>
+		<field name="dmrEsn" class="java.lang.String">
+			<fieldDescription><![CDATA[dmrEsn]]></fieldDescription>
+		</field>
+		<field name="numRadio" class="java.lang.String">
+			<fieldDescription><![CDATA[numRadio]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="List_Group" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="contactClient" class="java.lang.String">
+		<fieldDescription><![CDATA[contactClient]]></fieldDescription>
+	</field>
+	<field name="contactCommercial" class="java.lang.String">
+		<fieldDescription><![CDATA[contactCommercial]]></fieldDescription>
+	</field>
+	<field name="nomCommercial" class="java.lang.String">
+		<fieldDescription><![CDATA[nomCommercial]]></fieldDescription>
+	</field>
+	<field name="nomCorrespondant" class="java.lang.String">
+		<fieldDescription><![CDATA[nomCorrespondant]]></fieldDescription>
+	</field>
+	<field name="emailCommercial" class="java.lang.String">
+		<fieldDescription><![CDATA[emailCommercial]]></fieldDescription>
+	</field>
+	<field name="nomClient" class="java.lang.String">
+		<fieldDescription><![CDATA[nomClient]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="190" y="60" width="190" height="20" uuid="6a45922d-8f2f-4d1b-b343-971f6a11c201"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FICHE DE GROUPE]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="50" height="50" uuid="c8326e31-6aac-4c7b-8d81-2db1dd997d65"/>
+				<imageExpression><![CDATA["/home/w4/resources/img/logo-oci.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="182" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="271" height="30" uuid="99c47e6c-9b0b-4bad-a885-ff0d766f11b8"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Informations commercial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="10" width="272" height="30" uuid="fad8fe51-2c8c-483c-81b9-9bcba3a26ab7"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Informations client]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="48" width="67" height="21" uuid="5be427db-54fc-4744-a05b-349a7924ca81"/>
+				<text><![CDATA[Nom :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="80" width="67" height="21" uuid="34c4d146-46cc-4a6f-8b8e-395bee47875d"/>
+				<text><![CDATA[e-mail :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="115" width="67" height="21" uuid="8fe81ad4-8dfa-4f74-bf8e-0649d6fab7cd"/>
+				<text><![CDATA[Contact :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="49" width="90" height="21" uuid="91392648-8c90-455e-9a7f-f8225d69d698"/>
+				<text><![CDATA[Nom :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="82" width="90" height="18" uuid="3a00eda3-c7cd-4bab-ae3d-1e2e91106fd7"/>
+				<text><![CDATA[Correspondant :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="116" width="90" height="18" uuid="020d9ee3-18f9-416b-8958-072c011e503d"/>
+				<text><![CDATA[Contact :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="70" y="48" width="200" height="21" uuid="48a99503-4335-4668-956b-48c48cf9e2cb"/>
+				<textFieldExpression><![CDATA[$F{nomCommercial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="79" width="200" height="22" uuid="87d11136-c9c1-4b14-a9eb-96d91045f974"/>
+				<textFieldExpression><![CDATA[$F{emailCommercial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="113" width="200" height="23" uuid="c5c721ba-3485-4455-8560-d166631ddc74"/>
+				<textFieldExpression><![CDATA[$F{contactCommercial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="49" width="182" height="21" uuid="ca89b346-aa9c-4376-aed9-0dc15826604d"/>
+				<textFieldExpression><![CDATA[$F{nomClient}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="80" width="182" height="20" uuid="20382810-4d0e-4a20-9210-fd164121d21b"/>
+				<textFieldExpression><![CDATA[$F{nomCorrespondant}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="114" width="182" height="20" uuid="3f255e63-e5d4-489b-a925-bcb97cb6dcb9"/>
+				<textFieldExpression><![CDATA[$F{contactClient}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="30" width="271" height="1" uuid="f5fe730b-c2b5-4497-8a2f-bd025e944fd5">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="270" y="30" width="282" height="1" uuid="6cf02327-9040-465a-bf69-1a68cef7335d">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="270" y="0" width="1" height="150" uuid="d218c1ff-e3c5-45e1-836a-2c6fbf3e6fcc">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="150" width="552" height="1" uuid="5d1a3c3e-c8f1-4298-8437-358b68c42817">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="185" y="155" width="170" height="27" uuid="6ec810fb-9b46-4415-8cd8-ebf7d9b708ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Détails de groupe]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="82" splitType="Stretch">
+			<componentElement>
+				<reportElement x="2" y="10" width="550" height="60" uuid="93cee13e-09d0-4147-a1c8-53dfa8f006b9">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="DatasetDetailsGroupe" uuid="6fbdd15a-a51f-4a21-ad35-103bca16a59a">
+						<dataSourceExpression><![CDATA[$P{List_Group}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="9393606f-30d2-4208-96c6-6e154fe54606">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonne1"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="2eaaa4fc-3e19-4c22-84a0-e06c8bef16e0"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<text><![CDATA[Nom de groupe]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="c5235ec0-e69f-4e3c-be3c-b0ec094a1c16"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{nomGroupe}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="5983a5fc-8865-4201-9d5f-a57667581f0e">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonne2"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="30" uuid="e3c196c0-7a75-4a1b-88f0-8f558ed3d503"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<text><![CDATA[N°Groupe]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="70" height="30" uuid="f249ec80-6565-4013-8018-70bd9fcc4c72"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{numGroupe}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="41d4693e-494a-4711-a31d-af0815dcd4d7">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonne3"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="30" uuid="d4e90675-2edc-4e63-bf97-67d06671316a"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<text><![CDATA[N°Canal]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="70" height="30" uuid="f1ac620a-38f0-4067-9682-d3fb821ac454"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{numCanal}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="c22ec433-81ce-41ca-98b1-fbc55273f72a">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonne4"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="63f97e80-cfdc-4fb5-bb64-33aefb3b4dc8"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<text><![CDATA[N°Radio]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="88f80aad-2a2f-4ea5-826d-3ff496437ff9"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{numRadio}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="74538490-b5b1-411a-802f-3ddf05543612">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonne5"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="be02859c-7c0f-48b6-86db-42e2f652901b"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<text><![CDATA[MTPESN]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="47cf6123-809e-4258-be55-9a0e1767f3fd"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{mtpEsn}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="7e20345a-518d-4607-84eb-0f0ad5a91234">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonne6"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="1f86080a-647f-40ce-abb7-83c41788ed78"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<text><![CDATA[DMRESN]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="30" uuid="18060377-847d-4c45-9870-2b256c3a7734"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{dmrEsn}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="a19593e7-bc86-43d2-b160-1dd68ba24ef9">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonne7"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="30" uuid="98a154ce-fbe3-43b0-b33a-8ab3c399a1bf"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<text><![CDATA[Type radio]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="30" uuid="e0509fc3-9249-4b49-b188-54d50ad3b56d"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{typeRadio}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
